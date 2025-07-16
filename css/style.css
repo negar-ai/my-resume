@@ -384,8 +384,8 @@ h3.profession{
   width: 80px;
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
-  right: 60px;
-  bottom: -30px;
+  right: 150px;
+  bottom: -40px;
   z-index: 0;
 }
 
@@ -396,8 +396,8 @@ h3.profession{
   width: 80px;
   border-top: 10px solid var(--skin-color);
   border-left: 10px solid var(--skin-color);
-  left: 60px;
-  top: -30px;
+  left: 150px;
+  top: -40px;
   z-index: 0;
 }
 /* About */
@@ -424,12 +424,12 @@ h3.profession{
   flex-wrap: wrap;
 }
 .about .about-content{
-  float: 0 0 90%;
-  max-width: 90%;
+  float: 0 0 100%;
+  max-width: 100%;
 }
 .about .about-content .personal-info{
   flex: 0 0 50%;
-  max-width: 60%;
+  max-width: 50%;
 
   /* background-color: blueviolet; */
 }
@@ -455,7 +455,6 @@ h3.profession{
   border-bottom: 1px solid var(--bg-black-50);
   border-width: 2px;
   width: 190px;
-  /* margin-top: 30px; */
   /* padding: 10px; */
   color: var(--text-black-900);
 }
@@ -1010,6 +1009,31 @@ h3.profession{
 .contact-form .form-control {
   resize: none;
 }
+@media (max-width:1480px) {
+    .home-img::after {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-bottom: 10px solid var(--skin-color);
+  border-right: 10px solid var(--skin-color);
+  right: 70px;
+  bottom: -30px;
+  z-index: 0;
+}
+
+.home-img::before {
+  content: '';
+  position: absolute ;
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid var(--skin-color);
+  border-left: 10px solid var(--skin-color);
+  left: 70px;
+  top: -30px;
+  z-index: 0;
+}
+}
 
 @media  (max-width:1190px)
 {
@@ -1041,6 +1065,29 @@ h3.profession{
     display: block;
     margin-right:0;
   }
+  .home-img::after {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-bottom: 10px solid var(--skin-color);
+  border-right: 10px solid var(--skin-color);
+  right: 60px;
+  bottom: -30px;
+  z-index: 0;
+}
+
+.home-img::before {
+  content: '';
+  position: absolute ;
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid var(--skin-color);
+  border-left: 10px solid var(--skin-color);
+  left: 60px;
+  top: -30px;
+  z-index: 0;
+}
 
 }
 @media  (max-width:990px)
@@ -1062,11 +1109,16 @@ h3.profession{
   padding-right: 0;
   align-items: center;
   justify-content: center;
-  margin-bottom: 70px;
 
+
+  }
+  .personal-info h2{
+    margin-bottom: 90px;
+    justify-content: center;
   }
   .info-item{
     text-align: center;
+
   }
 
   .about .about-content .soft-skills{
