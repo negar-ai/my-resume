@@ -821,6 +821,85 @@ h3.profession{
   color: var(--skin-color);
   font-weight: 600;
 }
+/* Work Section */
+.work-section-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px; /* Counteract default row padding */
+    margin-right: -15px; /* Counteract default row padding */
+    position: relative;
+    flex-direction: row; /* Ensure horizontal layout */
+    justify-content: right; /* Center the grid container within this row */
+}
+
+.work-content {
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin-top: 30px; /* Space from the section title */
+}
+
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: right; */
+    gap: 30px; /* Space between items */
+    width: 100%; /* Ensure grid takes full width of its container */
+}
+
+.work-item {
+    flex-basis: 100%;
+    max-width: 85%;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px; /* Internal padding for each item */
+    box-shadow: 0 0 15px rgba(48,46,77,0.1);
+    text-align: right; /* RTL text alignment */
+    position: relative; /* For potential future absolute positioning or pseudo-elements */
+}
+
+.work-info h4 {
+    border-bottom: 1px dashed var(--bg-black-50);
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin-bottom: 10px;
+}
+.work-info h5 {
+    direction: ltr;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin-bottom: 7px;
+}
+
+.work-info p {
+    font-size: 0.95em;
+    padding-right: 25px;
+    color: var(--text-black-700);
+    margin-bottom: 5px;
+}
+.work-info p::before {
+    content: "✔";                /* check mark */
+    position: absolute;
+    right: 30px;
+    color: var(--skin-color);
+    font-size: 0.9em;
+}
+.work-info p span{
+  font-weight: 600;
+}
+.work .work-info  .timeline-date{
+  font-weight: 400px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: var(--text-black-700);
+}
+.work .work-info   .timeline-date .fa{
+  margin-left: 5px;
+}
+
 /* Recommendations Section */
 .recommendations-section-row {
     display: flex;
